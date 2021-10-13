@@ -1,0 +1,31 @@
+.black-timer{
+    position: absolute;
+    top: 120px;
+    left: 950px;
+    width: 140px;
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: gray;
+    opacity: 0.2;
+}
+
+.white-timer{
+    position: absolute;
+    top: 820px;
+    left: 950px;
+    width: 140px;
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: gray;
+    opacity: 0.2;
+}
+
+.black-time{
+    position: absolute;
+    top: 115px;
+    left: 1030px;
+    width: 140px;
+    border: none;
+}
