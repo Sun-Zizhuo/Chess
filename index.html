@@ -2,22 +2,28 @@
     <html lang="en">
     <head>
         <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <title>Chess</title>
         <style type="text/css">
             body{
                 margin: 0;
+                font-family: "Roboto", sans-serif;
             }
         </style>
     </head>
     <body style="background-color: #1A1A1A;">
         <canvas></canvas>
-        <script src="index.js"></script>
-        <div class="black-timer">
+        <script src="canvas.js"></script>
+        <div class="black-timer"></div>
+        <div class="black-time">
+            <h2 id="black-time">1:00</h2>
         </div>
-        <h2 class="black-time">asd</h2>
-        <div class="white-timer">
+        <div class="white-timer"></div>
+        <div class="white-time">
+            <h2 id="white-time">1:00</h2>
         </div>
-
     </body>
 </html> 

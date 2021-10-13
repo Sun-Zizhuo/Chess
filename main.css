@@ -24,8 +24,18 @@
 
 .black-time{
     position: absolute;
+    text-align: center;
     top: 115px;
-    left: 1030px;
-    width: 140px;
+    left: 950px;
+    width: 200px;
+    border: none;
+}
+
+.white-time{
+    position: absolute;
+    text-align: center;
+    top: 815px;
+    left: 950px;
+    width: 200px;
     border: none;
 }
