@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <title>Chess</title>
         <style type="text/css">
@@ -24,6 +24,42 @@
         <div class="white-timer"></div>
         <div class="white-time">
             <h2 id="white-time">1:00</h2>
+        </div>
+        
+        <script src="index.js"></script>
+            <div class="dropdown-open-menu">
+                <div class="dropdown-button" onclick="Dropdown()"></div>
+                <h2 class="dropdown-text" id="dropdown-text">1 min</h2>
+                <div class="open-menu" id="open-menu" onclick="Dropdown()"></div>
+                <div class="dropdown" id="dropdown"></div>
+            </div>
+            <div class="menu" id="menu">
+                <div class="dropdown-menu"></div>
+                <div class="bullet">
+                    <h2 class="bullet-text" id="bullet-text">Bullet</h2>
+                    <ul class="bullet-options" id="bullet-options">
+                        <li onclick="OptionClicked('1-min')" id="1-min">1 min</li>
+                        <li onclick="OptionClicked('1|1')" id="1|1">1 | 1</li>
+                        <li onclick="OptionClicked('2|1')" id="2|1">2 | 1</li>
+                    </ul>
+                </div>
+                <div class="blitz">
+                    <h2 class="blitz-text">Blitz</h2>
+                    <ul class="blitz-options" id="blitz-options">
+                        <li onclick="OptionClicked('3-min')" id="3-min">3 min</li>
+                        <li onclick="OptionClicked('3|2')" id="3|2">3 | 2</li>
+                        <li onclick="OptionClicked('5-min')" id="5-min">5 min</li>
+                    </ul>
+                </div>
+                <div class="rapid">
+                    <h2 class="rapid-text">Rapid</h2>
+                    <ul class="rapid-options" id="rapid-options">
+                        <li onclick="OptionClicked('10-min')" id="10-min">10 min</li>
+                        <li onclick="OptionClicked('20-min')" id="20-min">20 min</li>
+                        <li onclick="OptionClicked('30-min')" id="30-min">30 min</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </body>
 </html> 

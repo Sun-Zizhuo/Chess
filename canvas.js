@@ -28,6 +28,10 @@ window.addEventListener("mousedown", function(event){
     console.log(mouse);
 })
 
+// Draws background for side menu
+c.fillStyle = "#282828";
+c.fillRect(1300, 100, 550, 800);
+
 // Makes checkerboard pattern for chessboard
 for(let i = 1; i <= 8; i++)
 {
@@ -58,33 +62,6 @@ for(let i = 1; i <= 8; i++)
         
         c.fillRect(j * 100, i * 100, 100, 100);
     }   
-}
-
-// Loads the timer
-c.fillStyle = "gray";
-// RoundRect(950, 120, 1150, 180, 10, 128, 128, 128, 0.2);
-// RoundRect(950, 820, 1150, 880, 10, 128, 128, 128, 0.2);
-
-function RoundRect(x0, y0, x1, y1, radius, r, g, b, a)
-{
-    var w = x1 - x0;
-    var h = y1 - y0;
-    if (radius > w/2) radius = w/2;
-    if (radius > h/2) radius = h/2;
-    
-    c.beginPath();
-    c.moveTo(x1 - radius, y0);
-    c.quadraticCurveTo(x1, y0, x1, y0 + radius);
-    c.lineTo(x1, y1-radius);
-    c.quadraticCurveTo(x1, y1, x1 - radius, y1);
-    c.lineTo(x0 + radius, y1);
-    c.quadraticCurveTo(x0, y1, x0, y1 - radius);
-    c.lineTo(x0, y0 + radius);
-    c.quadraticCurveTo(x0, y0, x0 + radius, y0);
-    c.closePath();
-
-    c.fillStyle = `rgba(${r}, ${g}, ${b}, ${a})`;
-    c.fill();
 }
 
 function LoadPieces()

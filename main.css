@@ -29,6 +29,7 @@
     left: 950px;
     width: 200px;
     border: none;
+    color: white;
 }
 
 .white-time{
@@ -38,4 +39,139 @@
     left: 950px;
     width: 200px;
     border: none;
+    color: white;
+}
+
+.dropdown-button{
+    position: absolute;
+    cursor: pointer;
+    top: 150px;
+    left: 1400px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border: none;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.open-menu{
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    top: 180px;
+    left: 1730px;
+    border: 5px solid white;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(135deg);
+    border-top: transparent;
+    border-left: transparent;
+}
+
+.dropdown-text{
+    position: absolute;
+    cursor: pointer;
+    top: 153px;
+    left: 1400px;
+    width: 350px;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 250px;
+    left: 1350px;
+    width: 400px;
+    height: 400px;
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: gray;
+    opacity: 0.2;
+}
+
+.bullet-text{
+    position: absolute;
+    top: 270px;
+    left: 1400px;
+    color: white;
+    font-size: 17px;
+    opacity: 1;
+}
+
+.blitz-text{
+    position: absolute;
+    top: 370px;
+    left: 1400px;
+    color: white;
+    font-size: 17px;
+    opacity: 1;
+}
+
+.rapid-text{
+    position: absolute;
+    top: 470px;
+    left: 1400px;
+    color: white;
+    font-size: 17px;
+    opacity: 1;
+}
+
+.bullet-options{
+    position: absolute;
+    top: 310px;
+    left: 1400px;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blitz-options{
+    position: absolute;
+    top: 410px;
+    left: 1400px;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rapid-options{
+    position: absolute;
+    top: 510px;
+    left: 1400px;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    cursor: pointer;
+    background: black;
+    border-style: solid;
+    border-color: black;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
 }
